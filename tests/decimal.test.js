@@ -16,6 +16,15 @@ test('throws on number', () => {
   expect(() => decimal(1)).toThrow();
 });
 
+test('throws on invalid roman number', () => {
+  expect(() => decimal('IIII')).toThrow();
+  expect(() => decimal('IIIX')).toThrow();
+  expect(() => decimal('XXL')).toThrow();
+  expect(() => decimal('LXLXC')).toThrow();
+  expect(() => decimal('MCMC')).toThrow();
+  expect(() => decimal('INVALID')).toThrow();
+});
+
 test('returns 0 on empty string', () => {
   expect(decimal('')).toBe(0);
 })
