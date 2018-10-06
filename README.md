@@ -1,6 +1,6 @@
 # RomanJS
 
-Converts numbers from decimal to roman
+Converts numbers from decimal to roman and vice versa
 
 ## Installation
 
@@ -12,6 +12,8 @@ Converts numbers from decimal to roman
 const romanjs = require('romanjs');
 
 const romanNumber = romanjs.roman(23);
+const decimalNumber = romanjs.decimal('XXIII');
 
 console.log(romanNumber); // XXIII
+console.log(decimalNumber); // 23
 ```
