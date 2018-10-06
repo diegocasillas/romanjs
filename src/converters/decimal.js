@@ -2,7 +2,7 @@ const matrix = require('../utils/matrix');
 const romanRegex = require('../utils/romanRegex');
 
 const decimal = (n) => {
-  if (!romanRegex.test(n.toUpperCase())) {
+  if (typeof n !== 'string' || !romanRegex.test(n.toUpperCase())) {
     throw new Error('Invalid roman number');
   }
 
