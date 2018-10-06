@@ -1,7 +1,7 @@
 {
   "name": "romanjs",
   "version": "1.0.0",
-  "description": "Converts numbers from decimal to roman and vice versa",
+  "description": "Converts numbers from decimal to roman",
   "main": "src/index.js",
   "directories": {
     "test": "tests"
