@@ -1,15 +1,34 @@
+const matrix = require('../utils/matrix');
+const romanRegex = require('../utils/romanRegex');
+
 const decimal = (n) => {
-  if (n === null || n === undefined) {
-    throw new Error('No argument.');
+  if (!romanRegex.test(n.toUpperCase())) {
+    throw new Error('Invalid roman number');
   }
 
-  if (typeof n === 'number') {
-    throw new Error('The number must be a roman number string.')
+  let roman = 0;
+
+  for (let i = 0; i < n.length; i++) {
+    const currentValue = matrix.find((element) => {
+      return element[1] === n.charAt(i).toUpperCase();
+    })[0];
+
+    const nextIndex = i + 1;
+
+    if (nextIndex < n.length) {
+      const nextValue = matrix.find((element) => {
+        return element[1] === n.charAt(nextIndex).toUpperCase();
+      })[0];
+
+      nextValue > currentValue
+        ? roman -= currentValue
+        : roman += currentValue;
+    } else {
+      roman += currentValue;
+    }
   }
 
-  if (n === '') {
-    return 0;
-  }
+  return roman;
 }
 
 module.exports = decimal;
