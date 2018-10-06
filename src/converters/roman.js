@@ -1,12 +1,8 @@
 const matrix = require('../utils/matrix');
 
 const roman = (n) => {
-  if (!Number.isInteger(n)) {
-    throw new Error('The number must be an integer.');
-  }
-
-  if (n < 0 || n > 3999) {
-    throw new Error('The number must be between 0 and 3999.');
+  if (!Number.isInteger(n) || n < 0 || n > 3999) {
+    throw new Error('Invalid decimal number');
   }
 
   if (n === 0) {
