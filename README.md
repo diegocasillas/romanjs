@@ -17,3 +17,7 @@ const decimalNumber = romanjs.decimal('XXIII');
 console.log(romanNumber); // XXIII
 console.log(decimalNumber); // 23
 ```
+
+## License
+
+RomanJS is under [MIT License](/LICENSE).
