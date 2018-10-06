@@ -44,6 +44,10 @@ test('converts 3 to III', () => {
   expect(roman(3)).toBe('III');
 });
 
+test('converts 4 to IV', () => {
+  expect(roman(4)).toBe('IV');
+});
+
 test('converts 5 to V', () => {
   expect(roman(5)).toBe('V');
 });
@@ -128,7 +132,7 @@ test('converts 700 to DCC', () => {
   expect(roman(700)).toBe('DCC');
 });
 
-test('converts 800 to DCC', () => {
+test('converts 800 to DCCC', () => {
   expect(roman(800)).toBe('DCCC');
 });
 
@@ -148,6 +152,6 @@ test('converts 3000 to MMM', () => {
   expect(roman(3000)).toBe('MMM');
 });
 
-test('converts 3999 to MMMCMI', () => {
+test('converts 3999 to MMMCMXCIX', () => {
   expect(roman(3999)).toBe('MMMCMXCIX');
 });

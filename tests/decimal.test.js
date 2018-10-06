@@ -45,6 +45,10 @@ test('converts III to 3', () => {
   expect(decimal('III')).toBe(3);
 });
 
+test('converts IV to 4', () => {
+  expect(decimal('IV')).toBe(4);
+});
+
 test('converts V to 5', () => {
   expect(decimal('V')).toBe(5);
 });
@@ -149,6 +153,6 @@ test('converts MMM to 3000', () => {
   expect(decimal('MMM')).toBe(3000);
 });
 
-test('converts 3999 to 3999', () => {
+test('converts MMMCMXCIX to 3999', () => {
   expect(decimal('MMMCMXCIX')).toBe(3999);
 });
