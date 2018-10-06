@@ -4,12 +4,24 @@ test('throws on empty', () => {
   expect(() => decimal()).toThrow();
 });
 
+test('throws on undefined', () => {
+  expect(() => decimal(undefined)).toThrow();
+});
+
+test('throws on null', () => {
+  expect(() => decimal(null)).toThrow();
+});
+
 test('throws on number', () => {
   expect(() => decimal(1)).toThrow();
 });
 
 test('returns 0 on empty string', () => {
   expect(decimal('')).toBe(0);
+})
+
+test('works with lowercase string', () => {
+  expect(decimal('i')).toBe(1);
 })
 
 test('converts I to 1', () => {

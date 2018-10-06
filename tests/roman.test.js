@@ -4,6 +4,14 @@ test('throws on empty', () => {
   expect(() => roman()).toThrow();
 });
 
+test('throws on undefined', () => {
+  expect(() => roman(undefined)).toThrow();
+});
+
+test('throws on null', () => {
+  expect(() => roman(null)).toThrow();
+});
+
 test('throws on string', () => {
   expect(() => roman('1')).toThrow();
 });
