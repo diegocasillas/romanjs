@@ -1,0 +1,26 @@
+{
+  "name": "romanjs",
+  "version": "1.0.0",
+  "description": "Converts numbers from decimal to roman and vice versa",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^23.6.0"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diegocasillas/romanjs.git"
+  },
+  "author": "Diego Casillas <diegocasillasdev@gmail.com> (http://diegocasillas.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/diegocasillas/romanjs/issues"
+  },
+  "homepage": "https://github.com/diegocasillas/romanjs#readme"
+}
