@@ -17,6 +17,12 @@
     "type": "git",
     "url": "git+https://github.com/diegocasillas/romanjs.git"
   },
+  "keywords": [
+    "roman",
+    "decimal",
+    "number",
+    "converter"
+  ],
   "author": "Diego Casillas <diegocasillasdev@gmail.com> (http://diegocasillas.com/)",
   "license": "MIT",
   "bugs": {
