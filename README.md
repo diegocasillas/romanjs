@@ -1,5 +1,7 @@
 # RomanJS
 
+![npm](https://img.shields.io/npm/v/romanjs.svg)
+![npm bundle size (minified)](https://img.shields.io/bundlephobia/min/romanjs.svg)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 ![NpmLicense](https://img.shields.io/npm/l/romanjs.svg)
 
