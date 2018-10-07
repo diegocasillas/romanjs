@@ -1,6 +1,6 @@
 {
   "name": "romanjs",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Converts numbers from decimal to roman and vice versa",
   "main": "src/index.js",
   "directories": {
