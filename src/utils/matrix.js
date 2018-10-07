@@ -1,4 +1,4 @@
-module.exports = matrix = [
+const matrix = [
   [1000, 'M'],
   [900, 'CM'],
   [500, 'D'],
@@ -12,4 +12,6 @@ module.exports = matrix = [
   [5, 'V'],
   [4, 'IV'],
   [1, 'I']
-];
+]
+
+module.exports = matrix
